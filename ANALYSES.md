@@ -33,6 +33,11 @@ regeneration (`oneshot_baselines/gen_embeddings.py`) calls the OpenRouter API.
 Result files checked in under each `results/` directory are the exact
 artifacts behind the numbers reported in the paper.
 
+## Example conversations
+
+Three complete oracle/agent conversation traces with their final partitions
+are in `examples/conversations/` (see its README).
+
 ## License
 
 License to be finalized upon publication.

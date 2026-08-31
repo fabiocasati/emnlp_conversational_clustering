@@ -1,0 +1,6 @@
+{
+  "topic_id": "policy-privacy-and-compliance-follow-ups",
+  "label": "Policy, privacy, and compliance follow-ups",
+  "guidance": "Create a cluster for requests triggered by policy changes, privacy workflows, audit/compliance checks, or procedural follow-up obligations rather than break/fix incidents.",
+  "generated_at_turn": 3
+}

@@ -1,0 +1,6 @@
+{
+  "topic_id": "user-population-affected",
+  "label": "User population affected",
+  "guidance": "Cluster by who is impacted: individual employee, new hire cohort, managers, customer-facing agents, finance staff, office occupants, or cross-functional teams. Choose this if you want to understand which populations experience the most friction.",
+  "generated_at_turn": 3
+}
