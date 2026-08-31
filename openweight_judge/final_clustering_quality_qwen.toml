@@ -1,0 +1,20 @@
+input_dir = "data/final_enterprise_ticket_run/enterprise_ticket_run"
+evaluators = ["topic_conditioned_quality", "cluster_semantic_quality"]
+report_path = "openweight_judge/results/evaluation_report.json"
+resume = true
+
+[evaluator_params.topic_conditioned_quality]
+granularity = "normal"
+theme_match_prompt_id = "baseline_v1"
+
+[evaluator_params.topic_conditioned_quality.model_config]
+model = "qwen/qwen3-235b-a22b-2507"
+temperature = 0.0
+
+[evaluator_params.cluster_semantic_quality]
+coherence_prompt_id = "baseline_v1"
+distinctiveness_prompt_id = "baseline_v1"
+
+[evaluator_params.cluster_semantic_quality.model_config]
+model = "qwen/qwen3-235b-a22b-2507"
+temperature = 0.0

@@ -1,0 +1,91 @@
+{
+  "inputs": {
+    "closed_csq_ok": 110,
+    "closed_csq_failed": 0,
+    "open_csq_ok": 107,
+    "open_csq_failed": 3,
+    "closed_tcq_ok": 110,
+    "closed_tcq_failed": 0,
+    "open_tcq_ok": 110,
+    "open_tcq_failed": 0
+  },
+  "csq_paired_partitions": 107,
+  "csq_only_closed": 3,
+  "csq_only_open": 0,
+  "coherence": {
+    "closed_mean": 0.7914860554813825,
+    "open_mean": 0.7779101765316719,
+    "pearson_r": 0.6621898921660228,
+    "spearman_rho": 0.5654909183292949,
+    "mean_abs_diff": 0.09572837857884588,
+    "paired_diff_mean": -0.013575878949710705,
+    "paired_diff_ci95": [
+      -0.04159331886960389,
+      0.012084121421154143
+    ],
+    "cluster_level_n": 647,
+    "cluster_level_spearman": 0.35829302593208195
+  },
+  "supported_cluster_rate": {
+    "closed_macro": 0.9037828215398309,
+    "open_macro": 0.8172934282747368,
+    "paired_diff_mean": -0.08648939326509422,
+    "paired_diff_ci95": [
+      -0.1325642523364486,
+      -0.045329420709093626
+    ],
+    "cluster_level_n": 647,
+    "cluster_level_kappa": 0.43634977676140696,
+    "cluster_level_raw_agreement": 0.8516228748068007
+  },
+  "distinctiveness_score": {
+    "closed_mean": 0.5988828668735211,
+    "open_mean": 0.6509857743502602,
+    "pearson_r": 0.6783865283464934,
+    "spearman_rho": 0.7053984807953902,
+    "paired_diff_mean": 0.05210290747673925,
+    "paired_diff_ci95": [
+      0.02719437870021982,
+      0.07497189609455965
+    ]
+  },
+  "distinctiveness_overlap_flag": {
+    "pair_level_n": 1843,
+    "kappa": 0.3581903348719466,
+    "raw_agreement": 0.7400976668475312
+  },
+  "tcq_paired_partitions": 110,
+  "theme_resolution": {
+    "same_resolved_theme_rate": 0.7545454545454545,
+    "cond_ari": {
+      "closed_mean": 0.13016340235134266,
+      "open_mean": 0.11691392860496914,
+      "pearson_r": 0.7860150643022141,
+      "paired_diff_mean": -0.01324947374637351,
+      "paired_diff_ci95": [
+        -0.02455334893719258,
+        -0.003736057511166757
+      ]
+    },
+    "cond_nmi": {
+      "closed_mean": 0.3238190246415173,
+      "open_mean": 0.3196402134745158,
+      "pearson_r": 0.9916167540595152,
+      "paired_diff_mean": -0.004178811167001439,
+      "paired_diff_ci95": [
+        -0.008018849976160135,
+        -0.0005981801736789724
+      ]
+    },
+    "cond_vi": {
+      "closed_mean": 3.038565981233325,
+      "open_mean": 3.0963721675609785,
+      "pearson_r": 0.7550480290215907,
+      "paired_diff_mean": 0.05780618632765324,
+      "paired_diff_ci95": [
+        -0.006322787340058121,
+        0.12738013724304945
+      ]
+    }
+  }
+}

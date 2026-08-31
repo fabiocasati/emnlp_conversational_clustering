@@ -1,0 +1,1380 @@
+Evaluation bridge summary
+Requested rows: 1000
+Accepted rows: 1000
+Total generated rows: 1055
+Rejected need_attention rows: 55
+Rejected not_pass rows: 0
+Generation model: openai/gpt-4.1-mini
+Evaluator model: openai/gpt-4.1-mini
+Generation rounds used: 3
+Generation round limit: 8
+
+Round results:
+  round=1 requested=1000 accepted=947 need_attention=53 not_pass=0
+  round=2 requested=53 accepted=51 need_attention=2 not_pass=0
+  round=3 requested=2 accepted=2 need_attention=0 not_pass=0
+
+Dataset summary
+Rows: 1000
+Mode: balanced
+Difficulty: medium
+Text generation backend: openrouter
+OpenRouter model: openai/gpt-4.1-mini
+System mention probability: profile_default
+Access-related issue share: 0.083
+
+Schema support audit: no unsupported declared labels found.
+
+Field support:
+department:
+  declared_labels: 16
+  reachable_labels: 16
+  observed_labels: 16
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 27
+  reachable_count_max: 96
+  reachable_count_mean: 62.50
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+sub_department:
+  declared_labels: 52
+  reachable_labels: 52
+  observed_labels: 52
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 1
+  reachable_count_max: 44
+  reachable_count_mean: 19.23
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+requester_role:
+  declared_labels: 7
+  reachable_labels: 7
+  observed_labels: 7
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 38
+  reachable_count_max: 363
+  reachable_count_mean: 142.86
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+owning_team:
+  declared_labels: 40
+  reachable_labels: 40
+  observed_labels: 40
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 4
+  reachable_count_max: 56
+  reachable_count_mean: 25.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+ticket_category:
+  declared_labels: 51
+  reachable_labels: 51
+  observed_labels: 51
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 1
+  reachable_count_max: 57
+  reachable_count_mean: 19.61
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+issue_type:
+  declared_labels: 25
+  reachable_labels: 25
+  observed_labels: 25
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 37
+  reachable_count_max: 42
+  reachable_count_mean: 40.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+intent_group:
+  declared_labels: 12
+  reachable_labels: 12
+  observed_labels: 12
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 38
+  reachable_count_max: 160
+  reachable_count_mean: 83.33
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+sub_intent:
+  declared_labels: 181
+  reachable_labels: 181
+  observed_labels: 171
+  declared_coverage_ratio: 0.945
+  reachable_coverage_ratio: 0.945
+  reachable_count_min: 0
+  reachable_count_max: 22
+  reachable_count_mean: 5.52
+  unreachable_declared_labels: none
+  missing_reachable_labels: terminated_user_access_check, role_audit, software_purchase, marketing_permission_change, build_platform_access, service_account_access, warehouse_role_access, bi_group_membership_change, after_hours_access_setup, parking_access_request
+
+intent_label_coarse:
+  declared_labels: 12
+  reachable_labels: 12
+  observed_labels: 12
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 38
+  reachable_count_max: 160
+  reachable_count_mean: 83.33
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+intent_label_normal:
+  declared_labels: 25
+  reachable_labels: 25
+  observed_labels: 25
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 37
+  reachable_count_max: 42
+  reachable_count_mean: 40.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+intent_label_fine:
+  declared_labels: 181
+  reachable_labels: 181
+  observed_labels: 171
+  declared_coverage_ratio: 0.945
+  reachable_coverage_ratio: 0.945
+  reachable_count_min: 0
+  reachable_count_max: 22
+  reachable_count_mean: 5.52
+  unreachable_declared_labels: none
+  missing_reachable_labels: access_identity__access_request__terminated_user_access_check, access_identity__access_request__role_audit, finance_procurement__procurement_workflow_issue__software_purchase, access_identity__access_request__marketing_permission_change, access_identity__access_request__build_platform_access, access_identity__access_request__service_account_access, access_identity__access_request__warehouse_role_access, access_identity__access_request__bi_group_membership_change, access_identity__access_request__after_hours_access_setup, access_identity__access_request__parking_access_request
+
+organizational_label_coarse:
+  declared_labels: 16
+  reachable_labels: 16
+  observed_labels: 16
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 27
+  reachable_count_max: 96
+  reachable_count_mean: 62.50
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+organizational_label_normal:
+  declared_labels: 53
+  reachable_labels: 53
+  observed_labels: 53
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 1
+  reachable_count_max: 44
+  reachable_count_mean: 18.87
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+organizational_label_fine:
+  declared_labels: 134
+  reachable_labels: 134
+  observed_labels: 129
+  declared_coverage_ratio: 0.963
+  reachable_coverage_ratio: 0.963
+  reachable_count_min: 0
+  reachable_count_max: 24
+  reachable_count_mean: 7.46
+  unreachable_declared_labels: none
+  missing_reachable_labels: security__grc__identity_security, security__grc__incident_response, facilities__badge_access__badge_services, procurement__vendor_management__purchasing_desk, regional_operations__local_compliance__site_services
+
+system_name:
+  declared_labels: 75
+  reachable_labels: 75
+  observed_labels: 75
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 1
+  reachable_count_max: 56
+  reachable_count_mean: 13.33
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+business_event_context:
+  declared_labels: 8
+  reachable_labels: 8
+  observed_labels: 8
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 41
+  reachable_count_max: 364
+  reachable_count_mean: 125.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+workflow_stage:
+  declared_labels: 7
+  reachable_labels: 7
+  observed_labels: 7
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 61
+  reachable_count_max: 234
+  reachable_count_mean: 142.86
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+approval_required:
+  declared_labels: 5
+  reachable_labels: 5
+  observed_labels: 5
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 106
+  reachable_count_max: 341
+  reachable_count_mean: 200.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+dependency_type:
+  declared_labels: 6
+  reachable_labels: 6
+  observed_labels: 6
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 50
+  reachable_count_max: 480
+  reachable_count_mean: 166.67
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+urgency:
+  declared_labels: 4
+  reachable_labels: 4
+  observed_labels: 4
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 96
+  reachable_count_max: 439
+  reachable_count_mean: 250.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+severity:
+  declared_labels: 4
+  reachable_labels: 4
+  observed_labels: 4
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 146
+  reachable_count_max: 362
+  reachable_count_mean: 250.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+impact_scope:
+  declared_labels: 5
+  reachable_labels: 5
+  observed_labels: 5
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 48
+  reachable_count_max: 423
+  reachable_count_mean: 200.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+writing_style:
+  declared_labels: 6
+  reachable_labels: 6
+  observed_labels: 6
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 104
+  reachable_count_max: 213
+  reachable_count_mean: 166.67
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+clarity_level:
+  declared_labels: 4
+  reachable_labels: 4
+  observed_labels: 4
+  declared_coverage_ratio: 1.000
+  reachable_coverage_ratio: 1.000
+  reachable_count_min: 66
+  reachable_count_max: 380
+  reachable_count_mean: 250.00
+  unreachable_declared_labels: none
+  missing_reachable_labels: none
+
+Coverage control:
+  balanced mode targets reachable issue_type coverage
+
+Label counts:
+department:
+  HR: 95
+  Finance: 51
+  IT: 96
+  Security: 39
+  Facilities: 44
+  Procurement: 27
+  Legal: 66
+  Sales: 86
+  Marketing: 81
+  Customer Support: 84
+  Engineering: 90
+  Data: 84
+  Travel: 40
+  Workplace Experience: 39
+  Payroll: 39
+  Regional Operations: 39
+
+sub_department:
+  Payroll: 17
+  Benefits: 17
+  Onboarding: 32
+  Employee Relations: 29
+  Accounts Payable: 21
+  Accounts Receivable: 10
+  FP&A: 14
+  Tax: 6
+  Help Desk: 36
+  IAM: 37
+  Network: 10
+  Enterprise Apps: 13
+  SecOps: 13
+  GRC: 1
+  Incident Response: 20
+  Identity Governance: 5
+  Maintenance: 17
+  Badge Access: 5
+  Workspace: 11
+  Office Services: 24
+  Vendor Management: 10
+  Purchase Requests: 6
+  Asset Procurement: 11
+  Contract Review: 26
+  Privacy: 19
+  Compliance Support: 21
+  Sales Operations: 25
+  Deal Desk: 24
+  Territory Planning: 37
+  Marketing Operations: 31
+  Demand Generation: 13
+  Events: 37
+  Support Operations: 32
+  Escalations: 21
+  Knowledge Management: 31
+  Developer Productivity: 20
+  Infrastructure: 29
+  Release Engineering: 41
+  Analytics Engineering: 24
+  Business Intelligence: 16
+  Data Governance: 44
+  Travel Desk: 16
+  Expense Operations: 9
+  Mobility: 15
+  Events and Hospitality: 10
+  Visitor Services: 16
+  Payroll Operations: 12
+  Tax Operations: 12
+  Compensation Administration: 15
+  Site Operations: 15
+  Local Compliance: 10
+  Regional Services: 14
+
+requester_role:
+  employee: 363
+  manager: 237
+  director: 89
+  contractor: 82
+  intern: 38
+  executive_assistant: 88
+  new_hire: 103
+
+owning_team:
+  HR Operations: 47
+  Benefits Administration: 17
+  People Services: 31
+  Finance Operations: 22
+  Accounts Payable Operations: 17
+  Procurement Finance: 12
+  IT Support: 56
+  IAM Team: 40
+  Security Team: 20
+  Identity Security: 8
+  Incident Response: 11
+  Facilities Team: 26
+  Badge Services: 7
+  Workplace Services: 11
+  Procurement Team: 13
+  Vendor Operations: 10
+  Purchasing Desk: 4
+  Legal Ops: 29
+  Privacy Review: 21
+  Commercial Legal: 16
+  Sales Operations: 47
+  Revenue Systems: 39
+  Marketing Operations: 52
+  MarTech Support: 29
+  Support Operations: 43
+  Customer Systems: 41
+  Developer Productivity: 49
+  Release Engineering: 41
+  Data Platform: 47
+  Analytics Operations: 37
+  Travel Operations: 20
+  Expense Audit: 20
+  Workplace Experience Team: 15
+  Events Support: 14
+  Visitor Services: 10
+  Payroll Operations: 28
+  Payroll Tax Support: 11
+  Regional Operations Team: 23
+  Site Services: 7
+  Regional Compliance: 9
+
+ticket_category:
+  data_update: 30
+  policy_question: 12
+  benefits_issue: 11
+  onboarding_task: 42
+  reimbursement: 12
+  invoice_issue: 27
+  vendor_setup: 7
+  purchase_request: 5
+  access_request: 13
+  account_issue: 42
+  software_issue: 23
+  service_request: 18
+  security_concern: 23
+  access_review: 1
+  incident_report: 15
+  maintenance_request: 18
+  badge_issue: 3
+  workspace_request: 23
+  vendor_request: 9
+  purchase_approval: 3
+  contract_purchase: 15
+  contract_review: 25
+  privacy_request: 15
+  policy_clarification: 26
+  crm_support: 47
+  quote_operations: 16
+  territory_management: 23
+  campaign_operations: 33
+  marketing_tools: 20
+  event_marketing: 28
+  support_platform: 18
+  case_operations: 30
+  customer_communications: 36
+  developer_access: 2
+  developer_tooling: 40
+  release_operations: 48
+  analytics_access: 4
+  data_platform: 23
+  metrics_governance: 57
+  travel_booking: 16
+  travel_expense: 9
+  traveler_support: 15
+  office_services: 11
+  event_support: 11
+  visitor_services: 17
+  pay_cycle_issue: 14
+  tax_documents: 12
+  compensation_changes: 13
+  site_operations: 16
+  regional_compliance: 8
+  local_services: 15
+
+issue_type:
+  people_administration_issue: 41
+  policy_question: 38
+  onboarding_process_issue: 42
+  finance_transaction_issue: 39
+  procurement_workflow_issue: 39
+  access_request: 41
+  authentication_issue: 42
+  service_issue: 41
+  security_incident: 38
+  workplace_support_issue: 41
+  legal_review_issue: 40
+  sales_platform_issue: 41
+  sales_operations_issue: 41
+  marketing_operations_issue: 37
+  marketing_platform_issue: 41
+  customer_support_platform_issue: 41
+  customer_support_operations_issue: 39
+  developer_tooling_issue: 40
+  release_operations_issue: 42
+  data_platform_issue: 40
+  metrics_governance_issue: 40
+  travel_operations_issue: 40
+  workplace_experience_issue: 39
+  payroll_operations_issue: 39
+  regional_operations_issue: 38
+
+intent_group:
+  people_ops: 122
+  policy_compliance: 78
+  access_identity: 83
+  tech_support: 41
+  finance_procurement: 78
+  security_operations: 38
+  workplace_operations: 118
+  go_to_market_ops: 160
+  customer_operations: 80
+  engineering_operations: 82
+  data_operations: 80
+  travel_operations: 40
+
+sub_intent:
+  manager_change: 12
+  title_change: 11
+  personal_info_correction: 7
+  dependent_addition: 4
+  enrollment_problem: 4
+  coverage_question: 3
+  leave_policy_question: 4
+  remote_work_policy_question: 6
+  employment_policy_question: 2
+  new_hire_setup: 15
+  orientation_question: 14
+  missing_onboarding_step: 13
+  missing_reimbursement: 2
+  duplicate_claim: 6
+  receipt_followup: 4
+  invoice_mismatch: 8
+  payment_delay: 6
+  duplicate_invoice: 13
+  new_vendor_creation: 1
+  missing_tax_form: 2
+  bank_detail_update: 4
+  po_creation: 1
+  budget_code_question: 3
+  approval_missing: 1
+  vpn_access: 1
+  shared_drive_access: 3
+  admin_access: 6
+  temporary_access: 3
+  password_reset: 15
+  account_locked: 15
+  mfa_problem: 12
+  license_missing: 12
+  installation_failure: 4
+  application_crash: 7
+  laptop_setup: 6
+  software_installation: 6
+  hardware_replacement: 6
+  phishing_report: 5
+  suspicious_login: 8
+  data_exposure_concern: 10
+  privileged_access_review: 1
+  terminated_user_access_check: 0
+  role_audit: 0
+  malware_alert: 6
+  policy_violation: 3
+  credential_compromise: 6
+  ac_issue: 5
+  lighting_problem: 11
+  cleaning_issue: 2
+  badge_not_working: 1
+  new_badge_request: 1
+  visitor_access: 1
+  desk_move: 2
+  meeting_room_setup: 13
+  ergonomic_equipment: 8
+  new_supplier_request: 1
+  vendor_update: 3
+  vendor_document_missing: 5
+  software_purchase: 0
+  equipment_purchase: 2
+  urgent_purchase_exception: 1
+  subscription_renewal: 4
+  service_contract_request: 6
+  quote_review: 5
+  nda_review: 8
+  msa_review: 13
+  vendor_contract_review: 4
+  data_deletion_request: 5
+  data_access_request: 2
+  privacy_clause_question: 8
+  policy_exception_question: 7
+  retention_policy_question: 14
+  legal_process_question: 5
+  crm_access_change: 4
+  lead_routing_issue: 7
+  account_ownership_correction: 22
+  pipeline_visibility_issue: 14
+  quote_approval_followup: 5
+  quote_builder_sync_issue: 2
+  discount_exception_request: 3
+  quote_template_problem: 6
+  territory_update_request: 2
+  book_transfer_request: 5
+  territory_rule_mismatch: 12
+  account_coverage_gap: 4
+  campaign_launch_change: 8
+  form_routing_issue: 5
+  campaign_schedule_update: 11
+  suppression_list_issue: 9
+  marketing_tool_access: 3
+  audience_sync_problem: 10
+  nurture_enrollment_problem: 7
+  marketing_permission_change: 0
+  webinar_setup_issue: 7
+  swag_vendor_followup: 5
+  landing_page_publish_issue: 10
+  asset_approval_delay: 6
+  queue_access_change: 2
+  macro_or_view_missing: 5
+  trigger_automation_issue: 9
+  agent_provisioning_request: 2
+  case_reassignment_request: 7
+  handoff_queue_issue: 5
+  escalation_path_change: 10
+  case_merge_split_problem: 8
+  status_page_update_request: 9
+  help_center_publish_issue: 8
+  email_template_update: 8
+  outbound_notification_failure: 11
+  repo_access_request: 1
+  cloud_role_access: 1
+  build_platform_access: 0
+  service_account_access: 0
+  ci_pipeline_issue: 9
+  package_registry_problem: 15
+  build_runner_capacity_issue: 6
+  environment_config_problem: 10
+  release_window_question: 12
+  feature_flag_access: 6
+  deployment_freeze_exception: 8
+  rollback_support_request: 22
+  dashboard_access_request: 1
+  warehouse_role_access: 0
+  bi_group_membership_change: 0
+  row_level_access_issue: 3
+  pipeline_failure_report: 7
+  scheduled_report_missing: 4
+  dataset_backfill_request: 6
+  stale_dataset_alert: 6
+  metric_definition_question: 10
+  tracking_gap_report: 17
+  dashboard_discrepancy_report: 15
+  source_of_truth_conflict: 15
+  trip_booking_change: 3
+  unused_ticket_credit_question: 3
+  trip_approval_delay: 4
+  traveler_profile_sync_issue: 6
+  travel_expense_followup: 1
+  corporate_card_travel_issue: 3
+  per_diem_exception_question: 4
+  receipt_match_issue: 1
+  visa_letter_request: 5
+  emergency_travel_change: 3
+  travel_policy_exception: 4
+  traveler_profile_update: 3
+  office_supply_restock: 3
+  catering_setup_issue: 1
+  signage_update_request: 4
+  pantry_service_issue: 3
+  all_hands_room_reset: 2
+  onsite_event_support: 2
+  av_setup_issue: 4
+  event_schedule_change: 3
+  visitor_hosting_request: 10
+  after_hours_access_setup: 0
+  visitor_list_sync_issue: 7
+  parking_access_request: 0
+  missing_pay: 5
+  timesheet_correction: 3
+  overtime_calculation_issue: 4
+  deduction_mismatch: 2
+  w2_correction_request: 3
+  tax_withholding_change: 5
+  tax_document_delivery_issue: 1
+  residency_tax_question: 3
+  bonus_payment_followup: 2
+  pay_stub_request: 4
+  commission_payment_followup: 2
+  retro_pay_adjustment_request: 5
+  local_site_access_issue: 1
+  regional_move_coordination: 4
+  site_readiness_check: 4
+  regional_seating_change: 7
+  country_process_question: 2
+  local_notice_update: 4
+  regional_audit_evidence_request: 1
+  policy_translation_update: 1
+  mailroom_request: 4
+  local_vendor_followup: 5
+  courier_delivery_issue: 3
+  reception_service_request: 3
+
+intent_label_coarse:
+  people_ops: 122
+  policy_compliance: 78
+  access_identity: 83
+  tech_support: 41
+  finance_procurement: 78
+  security_operations: 38
+  workplace_operations: 118
+  go_to_market_ops: 160
+  customer_operations: 80
+  engineering_operations: 82
+  data_operations: 80
+  travel_operations: 40
+
+intent_label_normal:
+  people_ops__people_administration_issue: 41
+  policy_compliance__policy_question: 38
+  people_ops__onboarding_process_issue: 42
+  finance_procurement__finance_transaction_issue: 39
+  finance_procurement__procurement_workflow_issue: 39
+  access_identity__access_request: 41
+  access_identity__authentication_issue: 42
+  tech_support__service_issue: 41
+  security_operations__security_incident: 38
+  workplace_operations__workplace_support_issue: 41
+  policy_compliance__legal_review_issue: 40
+  go_to_market_ops__sales_platform_issue: 41
+  go_to_market_ops__sales_operations_issue: 41
+  go_to_market_ops__marketing_operations_issue: 37
+  go_to_market_ops__marketing_platform_issue: 41
+  customer_operations__customer_support_platform_issue: 41
+  customer_operations__customer_support_operations_issue: 39
+  engineering_operations__developer_tooling_issue: 40
+  engineering_operations__release_operations_issue: 42
+  data_operations__data_platform_issue: 40
+  data_operations__metrics_governance_issue: 40
+  travel_operations__travel_operations_issue: 40
+  workplace_operations__workplace_experience_issue: 39
+  people_ops__payroll_operations_issue: 39
+  workplace_operations__regional_operations_issue: 38
+
+intent_label_fine:
+  people_ops__people_administration_issue__manager_change: 12
+  people_ops__people_administration_issue__title_change: 11
+  people_ops__people_administration_issue__personal_info_correction: 7
+  people_ops__people_administration_issue__dependent_addition: 4
+  people_ops__people_administration_issue__enrollment_problem: 4
+  people_ops__people_administration_issue__coverage_question: 3
+  policy_compliance__policy_question__leave_policy_question: 4
+  policy_compliance__policy_question__remote_work_policy_question: 6
+  policy_compliance__policy_question__employment_policy_question: 2
+  people_ops__onboarding_process_issue__new_hire_setup: 15
+  people_ops__onboarding_process_issue__orientation_question: 14
+  people_ops__onboarding_process_issue__missing_onboarding_step: 13
+  finance_procurement__finance_transaction_issue__missing_reimbursement: 2
+  finance_procurement__finance_transaction_issue__duplicate_claim: 6
+  finance_procurement__finance_transaction_issue__receipt_followup: 4
+  finance_procurement__finance_transaction_issue__invoice_mismatch: 8
+  finance_procurement__finance_transaction_issue__payment_delay: 6
+  finance_procurement__finance_transaction_issue__duplicate_invoice: 13
+  finance_procurement__procurement_workflow_issue__new_vendor_creation: 1
+  finance_procurement__procurement_workflow_issue__missing_tax_form: 2
+  finance_procurement__procurement_workflow_issue__bank_detail_update: 4
+  finance_procurement__procurement_workflow_issue__po_creation: 1
+  finance_procurement__procurement_workflow_issue__budget_code_question: 3
+  finance_procurement__procurement_workflow_issue__approval_missing: 1
+  access_identity__access_request__vpn_access: 1
+  access_identity__access_request__shared_drive_access: 3
+  access_identity__access_request__admin_access: 6
+  access_identity__access_request__temporary_access: 3
+  access_identity__authentication_issue__password_reset: 15
+  access_identity__authentication_issue__account_locked: 15
+  access_identity__authentication_issue__mfa_problem: 12
+  tech_support__service_issue__license_missing: 12
+  tech_support__service_issue__installation_failure: 4
+  tech_support__service_issue__application_crash: 7
+  tech_support__service_issue__laptop_setup: 6
+  tech_support__service_issue__software_installation: 6
+  tech_support__service_issue__hardware_replacement: 6
+  security_operations__security_incident__phishing_report: 5
+  security_operations__security_incident__suspicious_login: 8
+  security_operations__security_incident__data_exposure_concern: 10
+  access_identity__access_request__privileged_access_review: 1
+  access_identity__access_request__terminated_user_access_check: 0
+  access_identity__access_request__role_audit: 0
+  security_operations__security_incident__malware_alert: 6
+  security_operations__security_incident__policy_violation: 3
+  security_operations__security_incident__credential_compromise: 6
+  workplace_operations__workplace_support_issue__ac_issue: 5
+  workplace_operations__workplace_support_issue__lighting_problem: 11
+  workplace_operations__workplace_support_issue__cleaning_issue: 2
+  access_identity__access_request__badge_not_working: 1
+  access_identity__access_request__new_badge_request: 1
+  access_identity__access_request__visitor_access: 1
+  workplace_operations__workplace_support_issue__desk_move: 2
+  workplace_operations__workplace_support_issue__meeting_room_setup: 13
+  workplace_operations__workplace_support_issue__ergonomic_equipment: 8
+  finance_procurement__procurement_workflow_issue__new_supplier_request: 1
+  finance_procurement__procurement_workflow_issue__vendor_update: 3
+  finance_procurement__procurement_workflow_issue__vendor_document_missing: 5
+  finance_procurement__procurement_workflow_issue__software_purchase: 0
+  finance_procurement__procurement_workflow_issue__equipment_purchase: 2
+  finance_procurement__procurement_workflow_issue__urgent_purchase_exception: 1
+  finance_procurement__procurement_workflow_issue__subscription_renewal: 4
+  finance_procurement__procurement_workflow_issue__service_contract_request: 6
+  finance_procurement__procurement_workflow_issue__quote_review: 5
+  policy_compliance__legal_review_issue__nda_review: 8
+  policy_compliance__legal_review_issue__msa_review: 13
+  policy_compliance__legal_review_issue__vendor_contract_review: 4
+  policy_compliance__legal_review_issue__data_deletion_request: 5
+  policy_compliance__legal_review_issue__data_access_request: 2
+  policy_compliance__legal_review_issue__privacy_clause_question: 8
+  policy_compliance__policy_question__policy_exception_question: 7
+  policy_compliance__policy_question__retention_policy_question: 14
+  policy_compliance__policy_question__legal_process_question: 5
+  access_identity__access_request__crm_access_change: 4
+  go_to_market_ops__sales_platform_issue__lead_routing_issue: 7
+  go_to_market_ops__sales_operations_issue__account_ownership_correction: 22
+  go_to_market_ops__sales_platform_issue__pipeline_visibility_issue: 14
+  go_to_market_ops__sales_operations_issue__quote_approval_followup: 5
+  go_to_market_ops__sales_platform_issue__quote_builder_sync_issue: 2
+  go_to_market_ops__sales_operations_issue__discount_exception_request: 3
+  go_to_market_ops__sales_platform_issue__quote_template_problem: 6
+  go_to_market_ops__sales_operations_issue__territory_update_request: 2
+  go_to_market_ops__sales_operations_issue__book_transfer_request: 5
+  go_to_market_ops__sales_platform_issue__territory_rule_mismatch: 12
+  go_to_market_ops__sales_operations_issue__account_coverage_gap: 4
+  go_to_market_ops__marketing_operations_issue__campaign_launch_change: 8
+  go_to_market_ops__marketing_platform_issue__form_routing_issue: 5
+  go_to_market_ops__marketing_operations_issue__campaign_schedule_update: 11
+  go_to_market_ops__marketing_platform_issue__suppression_list_issue: 9
+  access_identity__access_request__marketing_tool_access: 3
+  go_to_market_ops__marketing_platform_issue__audience_sync_problem: 10
+  go_to_market_ops__marketing_platform_issue__nurture_enrollment_problem: 7
+  access_identity__access_request__marketing_permission_change: 0
+  go_to_market_ops__marketing_operations_issue__webinar_setup_issue: 7
+  go_to_market_ops__marketing_operations_issue__swag_vendor_followup: 5
+  go_to_market_ops__marketing_platform_issue__landing_page_publish_issue: 10
+  go_to_market_ops__marketing_operations_issue__asset_approval_delay: 6
+  access_identity__access_request__queue_access_change: 2
+  customer_operations__customer_support_platform_issue__macro_or_view_missing: 5
+  customer_operations__customer_support_platform_issue__trigger_automation_issue: 9
+  access_identity__access_request__agent_provisioning_request: 2
+  customer_operations__customer_support_operations_issue__case_reassignment_request: 7
+  customer_operations__customer_support_operations_issue__handoff_queue_issue: 5
+  customer_operations__customer_support_operations_issue__escalation_path_change: 10
+  customer_operations__customer_support_platform_issue__case_merge_split_problem: 8
+  customer_operations__customer_support_operations_issue__status_page_update_request: 9
+  customer_operations__customer_support_platform_issue__help_center_publish_issue: 8
+  customer_operations__customer_support_operations_issue__email_template_update: 8
+  customer_operations__customer_support_platform_issue__outbound_notification_failure: 11
+  access_identity__access_request__repo_access_request: 1
+  access_identity__access_request__cloud_role_access: 1
+  access_identity__access_request__build_platform_access: 0
+  access_identity__access_request__service_account_access: 0
+  engineering_operations__developer_tooling_issue__ci_pipeline_issue: 9
+  engineering_operations__developer_tooling_issue__package_registry_problem: 15
+  engineering_operations__developer_tooling_issue__build_runner_capacity_issue: 6
+  engineering_operations__developer_tooling_issue__environment_config_problem: 10
+  engineering_operations__release_operations_issue__release_window_question: 12
+  access_identity__access_request__feature_flag_access: 6
+  engineering_operations__release_operations_issue__deployment_freeze_exception: 8
+  engineering_operations__release_operations_issue__rollback_support_request: 22
+  access_identity__access_request__dashboard_access_request: 1
+  access_identity__access_request__warehouse_role_access: 0
+  access_identity__access_request__bi_group_membership_change: 0
+  access_identity__access_request__row_level_access_issue: 3
+  data_operations__data_platform_issue__pipeline_failure_report: 7
+  data_operations__data_platform_issue__scheduled_report_missing: 4
+  data_operations__data_platform_issue__dataset_backfill_request: 6
+  data_operations__data_platform_issue__stale_dataset_alert: 6
+  data_operations__metrics_governance_issue__metric_definition_question: 10
+  data_operations__data_platform_issue__tracking_gap_report: 17
+  data_operations__metrics_governance_issue__dashboard_discrepancy_report: 15
+  data_operations__metrics_governance_issue__source_of_truth_conflict: 15
+  travel_operations__travel_operations_issue__trip_booking_change: 3
+  travel_operations__travel_operations_issue__unused_ticket_credit_question: 3
+  travel_operations__travel_operations_issue__trip_approval_delay: 4
+  travel_operations__travel_operations_issue__traveler_profile_sync_issue: 6
+  travel_operations__travel_operations_issue__travel_expense_followup: 1
+  travel_operations__travel_operations_issue__corporate_card_travel_issue: 3
+  travel_operations__travel_operations_issue__per_diem_exception_question: 4
+  travel_operations__travel_operations_issue__receipt_match_issue: 1
+  travel_operations__travel_operations_issue__visa_letter_request: 5
+  travel_operations__travel_operations_issue__emergency_travel_change: 3
+  travel_operations__travel_operations_issue__travel_policy_exception: 4
+  travel_operations__travel_operations_issue__traveler_profile_update: 3
+  workplace_operations__workplace_experience_issue__office_supply_restock: 3
+  workplace_operations__workplace_experience_issue__catering_setup_issue: 1
+  workplace_operations__workplace_experience_issue__signage_update_request: 4
+  workplace_operations__workplace_experience_issue__pantry_service_issue: 3
+  workplace_operations__workplace_experience_issue__all_hands_room_reset: 2
+  workplace_operations__workplace_experience_issue__onsite_event_support: 2
+  workplace_operations__workplace_experience_issue__av_setup_issue: 4
+  workplace_operations__workplace_experience_issue__event_schedule_change: 3
+  workplace_operations__workplace_experience_issue__visitor_hosting_request: 10
+  access_identity__access_request__after_hours_access_setup: 0
+  workplace_operations__workplace_experience_issue__visitor_list_sync_issue: 7
+  access_identity__access_request__parking_access_request: 0
+  people_ops__payroll_operations_issue__missing_pay: 5
+  people_ops__payroll_operations_issue__timesheet_correction: 3
+  people_ops__payroll_operations_issue__overtime_calculation_issue: 4
+  people_ops__payroll_operations_issue__deduction_mismatch: 2
+  people_ops__payroll_operations_issue__w2_correction_request: 3
+  people_ops__payroll_operations_issue__tax_withholding_change: 5
+  people_ops__payroll_operations_issue__tax_document_delivery_issue: 1
+  people_ops__payroll_operations_issue__residency_tax_question: 3
+  people_ops__payroll_operations_issue__bonus_payment_followup: 2
+  people_ops__payroll_operations_issue__pay_stub_request: 4
+  people_ops__payroll_operations_issue__commission_payment_followup: 2
+  people_ops__payroll_operations_issue__retro_pay_adjustment_request: 5
+  access_identity__access_request__local_site_access_issue: 1
+  workplace_operations__regional_operations_issue__regional_move_coordination: 4
+  workplace_operations__regional_operations_issue__site_readiness_check: 4
+  workplace_operations__regional_operations_issue__regional_seating_change: 7
+  workplace_operations__regional_operations_issue__country_process_question: 2
+  workplace_operations__regional_operations_issue__local_notice_update: 4
+  workplace_operations__regional_operations_issue__regional_audit_evidence_request: 1
+  workplace_operations__regional_operations_issue__policy_translation_update: 1
+  workplace_operations__regional_operations_issue__mailroom_request: 4
+  workplace_operations__regional_operations_issue__local_vendor_followup: 5
+  workplace_operations__regional_operations_issue__courier_delivery_issue: 3
+  workplace_operations__regional_operations_issue__reception_service_request: 3
+
+organizational_label_coarse:
+  hr: 95
+  finance: 51
+  it: 96
+  security: 39
+  facilities: 44
+  procurement: 27
+  legal: 66
+  sales: 86
+  marketing: 81
+  customer_support: 84
+  engineering: 90
+  data: 84
+  travel: 40
+  workplace_experience: 39
+  payroll: 39
+  regional_operations: 39
+
+organizational_label_normal:
+  hr__payroll: 17
+  hr__benefits: 17
+  hr__onboarding: 32
+  hr__employee_relations: 29
+  finance__accounts_payable: 21
+  finance__accounts_receivable: 10
+  finance__fp_a: 14
+  finance__tax: 6
+  it__help_desk: 36
+  it__iam: 37
+  it__network: 10
+  it__enterprise_apps: 13
+  security__secops: 13
+  security__grc: 1
+  security__incident_response: 20
+  security__identity_governance: 5
+  facilities__maintenance: 17
+  facilities__badge_access: 5
+  facilities__workspace: 11
+  facilities__office_services: 11
+  procurement__vendor_management: 10
+  procurement__purchase_requests: 6
+  procurement__asset_procurement: 11
+  legal__contract_review: 26
+  legal__privacy: 19
+  legal__compliance_support: 21
+  sales__sales_operations: 25
+  sales__deal_desk: 24
+  sales__territory_planning: 37
+  marketing__marketing_operations: 31
+  marketing__demand_generation: 13
+  marketing__events: 37
+  customer_support__support_operations: 32
+  customer_support__escalations: 21
+  customer_support__knowledge_management: 31
+  engineering__developer_productivity: 20
+  engineering__infrastructure: 29
+  engineering__release_engineering: 41
+  data__analytics_engineering: 24
+  data__business_intelligence: 16
+  data__data_governance: 44
+  travel__travel_desk: 16
+  travel__expense_operations: 9
+  travel__mobility: 15
+  workplace_experience__office_services: 13
+  workplace_experience__events_and_hospitality: 10
+  workplace_experience__visitor_services: 16
+  payroll__payroll_operations: 12
+  payroll__tax_operations: 12
+  payroll__compensation_administration: 15
+  regional_operations__site_operations: 15
+  regional_operations__local_compliance: 10
+  regional_operations__regional_services: 14
+
+organizational_label_fine:
+  hr__payroll__hr_operations: 9
+  hr__payroll__benefits_administration: 2
+  hr__payroll__people_services: 6
+  hr__benefits__hr_operations: 9
+  hr__benefits__benefits_administration: 6
+  hr__benefits__people_services: 2
+  hr__onboarding__hr_operations: 13
+  hr__onboarding__benefits_administration: 4
+  hr__onboarding__people_services: 15
+  hr__employee_relations__hr_operations: 16
+  hr__employee_relations__benefits_administration: 5
+  hr__employee_relations__people_services: 8
+  finance__accounts_payable__finance_operations: 9
+  finance__accounts_payable__accounts_payable_operations: 10
+  finance__accounts_payable__procurement_finance: 2
+  finance__accounts_receivable__finance_operations: 6
+  finance__accounts_receivable__accounts_payable_operations: 3
+  finance__accounts_receivable__procurement_finance: 1
+  finance__fp_a__finance_operations: 5
+  finance__fp_a__accounts_payable_operations: 2
+  finance__fp_a__procurement_finance: 7
+  finance__tax__finance_operations: 2
+  finance__tax__accounts_payable_operations: 2
+  finance__tax__procurement_finance: 2
+  it__help_desk__it_support: 20
+  it__help_desk__iam_team: 16
+  it__iam__it_support: 20
+  it__iam__iam_team: 17
+  it__network__it_support: 6
+  it__network__iam_team: 4
+  it__enterprise_apps__it_support: 10
+  it__enterprise_apps__iam_team: 3
+  security__secops__security_team: 7
+  security__secops__identity_security: 1
+  security__secops__incident_response: 5
+  security__grc__security_team: 1
+  security__grc__identity_security: 0
+  security__grc__incident_response: 0
+  security__incident_response__security_team: 9
+  security__incident_response__identity_security: 6
+  security__incident_response__incident_response: 5
+  security__identity_governance__security_team: 3
+  security__identity_governance__identity_security: 1
+  security__identity_governance__incident_response: 1
+  facilities__maintenance__facilities_team: 11
+  facilities__maintenance__badge_services: 2
+  facilities__maintenance__workplace_services: 4
+  facilities__badge_access__facilities_team: 4
+  facilities__badge_access__badge_services: 0
+  facilities__badge_access__workplace_services: 1
+  facilities__workspace__facilities_team: 6
+  facilities__workspace__badge_services: 4
+  facilities__workspace__workplace_services: 1
+  facilities__office_services__facilities_team: 5
+  facilities__office_services__badge_services: 1
+  facilities__office_services__workplace_services: 5
+  procurement__vendor_management__procurement_team: 4
+  procurement__vendor_management__vendor_operations: 6
+  procurement__vendor_management__purchasing_desk: 0
+  procurement__purchase_requests__procurement_team: 2
+  procurement__purchase_requests__vendor_operations: 1
+  procurement__purchase_requests__purchasing_desk: 3
+  procurement__asset_procurement__procurement_team: 7
+  procurement__asset_procurement__vendor_operations: 3
+  procurement__asset_procurement__purchasing_desk: 1
+  legal__contract_review__legal_ops: 13
+  legal__contract_review__privacy_review: 7
+  legal__contract_review__commercial_legal: 6
+  legal__privacy__legal_ops: 8
+  legal__privacy__privacy_review: 6
+  legal__privacy__commercial_legal: 5
+  legal__compliance_support__legal_ops: 8
+  legal__compliance_support__privacy_review: 8
+  legal__compliance_support__commercial_legal: 5
+  sales__sales_operations__sales_operations: 14
+  sales__sales_operations__revenue_systems: 11
+  sales__deal_desk__sales_operations: 15
+  sales__deal_desk__revenue_systems: 9
+  sales__territory_planning__sales_operations: 18
+  sales__territory_planning__revenue_systems: 19
+  marketing__marketing_operations__marketing_operations: 21
+  marketing__marketing_operations__martech_support: 10
+  marketing__demand_generation__marketing_operations: 7
+  marketing__demand_generation__martech_support: 6
+  marketing__events__marketing_operations: 24
+  marketing__events__martech_support: 13
+  customer_support__support_operations__support_operations: 15
+  customer_support__support_operations__customer_systems: 17
+  customer_support__escalations__support_operations: 12
+  customer_support__escalations__customer_systems: 9
+  customer_support__knowledge_management__support_operations: 16
+  customer_support__knowledge_management__customer_systems: 15
+  engineering__developer_productivity__developer_productivity: 11
+  engineering__developer_productivity__release_engineering: 9
+  engineering__infrastructure__developer_productivity: 19
+  engineering__infrastructure__release_engineering: 10
+  engineering__release_engineering__developer_productivity: 19
+  engineering__release_engineering__release_engineering: 22
+  data__analytics_engineering__data_platform: 14
+  data__analytics_engineering__analytics_operations: 10
+  data__business_intelligence__data_platform: 9
+  data__business_intelligence__analytics_operations: 7
+  data__data_governance__data_platform: 24
+  data__data_governance__analytics_operations: 20
+  travel__travel_desk__travel_operations: 5
+  travel__travel_desk__expense_audit: 11
+  travel__expense_operations__travel_operations: 4
+  travel__expense_operations__expense_audit: 5
+  travel__mobility__travel_operations: 11
+  travel__mobility__expense_audit: 4
+  workplace_experience__office_services__workplace_experience_team: 4
+  workplace_experience__office_services__events_support: 7
+  workplace_experience__office_services__visitor_services: 2
+  workplace_experience__events_and_hospitality__workplace_experience_team: 4
+  workplace_experience__events_and_hospitality__events_support: 4
+  workplace_experience__events_and_hospitality__visitor_services: 2
+  workplace_experience__visitor_services__workplace_experience_team: 7
+  workplace_experience__visitor_services__events_support: 3
+  workplace_experience__visitor_services__visitor_services: 6
+  payroll__payroll_operations__payroll_operations: 11
+  payroll__payroll_operations__payroll_tax_support: 1
+  payroll__tax_operations__payroll_operations: 8
+  payroll__tax_operations__payroll_tax_support: 4
+  payroll__compensation_administration__payroll_operations: 9
+  payroll__compensation_administration__payroll_tax_support: 6
+  regional_operations__site_operations__regional_operations_team: 9
+  regional_operations__site_operations__site_services: 3
+  regional_operations__site_operations__regional_compliance: 3
+  regional_operations__local_compliance__regional_operations_team: 7
+  regional_operations__local_compliance__site_services: 0
+  regional_operations__local_compliance__regional_compliance: 3
+  regional_operations__regional_services__regional_operations_team: 7
+  regional_operations__regional_services__site_services: 4
+  regional_operations__regional_services__regional_compliance: 3
+
+system_name:
+  Workday: 56
+  Greenhouse: 23
+  Benefits Portal: 19
+  Learning Management System: 12
+  NetSuite: 12
+  SAP: 16
+  Coupa: 22
+  Expense Portal: 8
+  Billing Portal: 16
+  Okta: 23
+  Google Workspace: 16
+  Microsoft 365: 16
+  Jira: 17
+  VPN: 8
+  MDM Platform: 14
+  Service Desk Portal: 8
+  SIEM: 14
+  EDR Platform: 4
+  Access Governance Tool: 4
+  Security Awareness Platform: 5
+  Vulnerability Management Platform: 6
+  Badge System: 21
+  Room Booking Tool: 11
+  Workplace Portal: 24
+  Maintenance Ticketing System: 10
+  Vendor Portal: 3
+  Purchase Intake Portal: 1
+  Contract Lifecycle Tool: 24
+  Document Management System: 18
+  E-signature Platform: 13
+  Privacy Request Portal: 11
+  Salesforce: 25
+  Quote Builder: 18
+  Sales Engagement Platform: 15
+  Revenue Intelligence Platform: 15
+  Territory Planning Tool: 13
+  Marketo: 18
+  HubSpot: 18
+  CMS Platform: 16
+  Webinar Platform: 14
+  Digital Asset Manager: 15
+  Zendesk: 25
+  Statuspage: 22
+  Help Center: 17
+  Support Messaging Platform: 7
+  Customer CRM: 13
+  GitHub: 8
+  Cloud Console: 12
+  Build Platform: 17
+  Feature Flag Service: 17
+  Incident Management Platform: 13
+  Secrets Manager: 13
+  Artifact Registry: 10
+  Looker: 10
+  Snowflake: 8
+  dbt Cloud: 13
+  Tracking Console: 25
+  Workflow Orchestrator: 6
+  Data Catalog: 11
+  Experimentation Platform: 11
+  Travel Portal: 16
+  Concur: 11
+  Corporate Card Portal: 7
+  Visa Support Portal: 6
+  Visitor Management System: 10
+  Catering Portal: 7
+  Event Calendar: 6
+  AV Booking Tool: 5
+  Parking Management System: 6
+  Payroll Portal: 7
+  ADP: 9
+  Timekeeping System: 8
+  Local Operations Portal: 11
+  Courier Tracking Portal: 6
+  Regional Compliance Tracker: 5
+
+business_event_context:
+  routine_operation: 364
+  new_hire_onboarding: 128
+  employee_offboarding: 56
+  quarter_end_close: 41
+  audit_preparation: 49
+  org_restructure: 113
+  product_launch: 166
+  office_move: 83
+
+workflow_stage:
+  new_submission: 227
+  triaged: 148
+  pending_requester_info: 79
+  pending_approval: 234
+  in_progress: 170
+  blocked: 81
+  escalated: 61
+
+approval_required:
+  none: 285
+  manager_approval: 341
+  finance_approval: 138
+  security_approval: 106
+  multi_step_approval: 130
+
+dependency_type:
+  none: 480
+  waiting_for_document: 126
+  waiting_for_manager: 171
+  waiting_for_vendor: 63
+  waiting_for_system_sync: 110
+  waiting_for_another_team: 50
+
+urgency:
+  low: 171
+  medium: 439
+  high: 294
+  critical: 96
+
+severity:
+  minor: 181
+  moderate: 362
+  major: 311
+  business_critical: 146
+
+impact_scope:
+  single_user: 423
+  single_team: 227
+  single_department: 178
+  multi_department: 124
+  company_wide: 48
+
+writing_style:
+  concise: 207
+  formal: 213
+  informal: 145
+  frustrated: 151
+  technical: 180
+  non_native_english: 104
+
+clarity_level:
+  clear: 380
+  moderately_clear: 350
+  vague: 66
+  missing_some_details: 204
+
+Cross-tabs:
+department x ticket_category:
+  HR (total=95): data_update=30, policy_question=12, benefits_issue=11, onboarding_task=42
+  Finance (total=51): reimbursement=12, invoice_issue=27, vendor_setup=7, purchase_request=5
+  IT (total=96): access_request=13, account_issue=42, software_issue=23, service_request=18
+  Security (total=39): security_concern=23, access_review=1, incident_report=15
+  Facilities (total=44): maintenance_request=18, badge_issue=3, workspace_request=23
+  Procurement (total=27): vendor_request=9, purchase_approval=3, contract_purchase=15
+  Legal (total=66): contract_review=25, privacy_request=15, policy_clarification=26
+  Sales (total=86): crm_support=47, quote_operations=16, territory_management=23
+  Marketing (total=81): campaign_operations=33, marketing_tools=20, event_marketing=28
+  Customer Support (total=84): support_platform=18, case_operations=30, customer_communications=36
+  Engineering (total=90): developer_access=2, developer_tooling=40, release_operations=48
+  Data (total=84): analytics_access=4, data_platform=23, metrics_governance=57
+  Travel (total=40): travel_booking=16, travel_expense=9, traveler_support=15
+  Workplace Experience (total=39): office_services=11, event_support=11, visitor_services=17
+  Payroll (total=39): pay_cycle_issue=14, tax_documents=12, compensation_changes=13
+  Regional Operations (total=39): site_operations=16, regional_compliance=8, local_services=15
+
+intent_group x issue_type:
+  people_ops (total=122): people_administration_issue=41, onboarding_process_issue=42, payroll_operations_issue=39
+  policy_compliance (total=78): policy_question=38, legal_review_issue=40
+  access_identity (total=83): access_request=41, authentication_issue=42
+  tech_support (total=41): service_issue=41
+  finance_procurement (total=78): finance_transaction_issue=39, procurement_workflow_issue=39
+  security_operations (total=38): security_incident=38
+  workplace_operations (total=118): workplace_support_issue=41, workplace_experience_issue=39, regional_operations_issue=38
+  go_to_market_ops (total=160): sales_platform_issue=41, sales_operations_issue=41, marketing_operations_issue=37, marketing_platform_issue=41
+  customer_operations (total=80): customer_support_platform_issue=41, customer_support_operations_issue=39
+  engineering_operations (total=82): developer_tooling_issue=40, release_operations_issue=42
+  data_operations (total=80): data_platform_issue=40, metrics_governance_issue=40
+  travel_operations (total=40): travel_operations_issue=40
+
+issue_type x sub_intent:
+  people_administration_issue (total=41): manager_change=12, title_change=11, personal_info_correction=7, dependent_addition=4, enrollment_problem=4, coverage_question=3
+  policy_question (total=38): leave_policy_question=4, remote_work_policy_question=6, employment_policy_question=2, policy_exception_question=7, retention_policy_question=14, legal_process_question=5
+  onboarding_process_issue (total=42): new_hire_setup=15, orientation_question=14, missing_onboarding_step=13
+  finance_transaction_issue (total=39): missing_reimbursement=2, duplicate_claim=6, receipt_followup=4, invoice_mismatch=8, payment_delay=6, duplicate_invoice=13
+  procurement_workflow_issue (total=39): new_vendor_creation=1, missing_tax_form=2, bank_detail_update=4, po_creation=1, budget_code_question=3, approval_missing=1, new_supplier_request=1, vendor_update=3, vendor_document_missing=5, equipment_purchase=2, urgent_purchase_exception=1, subscription_renewal=4, service_contract_request=6, quote_review=5
+  access_request (total=41): vpn_access=1, shared_drive_access=3, admin_access=6, temporary_access=3, privileged_access_review=1, badge_not_working=1, new_badge_request=1, visitor_access=1, crm_access_change=4, marketing_tool_access=3, queue_access_change=2, agent_provisioning_request=2, repo_access_request=1, cloud_role_access=1, feature_flag_access=6, dashboard_access_request=1, row_level_access_issue=3, local_site_access_issue=1
+  authentication_issue (total=42): password_reset=15, account_locked=15, mfa_problem=12
+  service_issue (total=41): license_missing=12, installation_failure=4, application_crash=7, laptop_setup=6, software_installation=6, hardware_replacement=6
+  security_incident (total=38): phishing_report=5, suspicious_login=8, data_exposure_concern=10, malware_alert=6, policy_violation=3, credential_compromise=6
+  workplace_support_issue (total=41): ac_issue=5, lighting_problem=11, cleaning_issue=2, desk_move=2, meeting_room_setup=13, ergonomic_equipment=8
+  legal_review_issue (total=40): nda_review=8, msa_review=13, vendor_contract_review=4, data_deletion_request=5, data_access_request=2, privacy_clause_question=8
+  sales_platform_issue (total=41): lead_routing_issue=7, pipeline_visibility_issue=14, quote_builder_sync_issue=2, quote_template_problem=6, territory_rule_mismatch=12
+  sales_operations_issue (total=41): account_ownership_correction=22, quote_approval_followup=5, discount_exception_request=3, territory_update_request=2, book_transfer_request=5, account_coverage_gap=4
+  marketing_operations_issue (total=37): campaign_launch_change=8, campaign_schedule_update=11, webinar_setup_issue=7, swag_vendor_followup=5, asset_approval_delay=6
+  marketing_platform_issue (total=41): form_routing_issue=5, suppression_list_issue=9, audience_sync_problem=10, nurture_enrollment_problem=7, landing_page_publish_issue=10
+  customer_support_platform_issue (total=41): macro_or_view_missing=5, trigger_automation_issue=9, case_merge_split_problem=8, help_center_publish_issue=8, outbound_notification_failure=11
+  customer_support_operations_issue (total=39): case_reassignment_request=7, handoff_queue_issue=5, escalation_path_change=10, status_page_update_request=9, email_template_update=8
+  developer_tooling_issue (total=40): ci_pipeline_issue=9, package_registry_problem=15, build_runner_capacity_issue=6, environment_config_problem=10
+  release_operations_issue (total=42): release_window_question=12, deployment_freeze_exception=8, rollback_support_request=22
+  data_platform_issue (total=40): pipeline_failure_report=7, scheduled_report_missing=4, dataset_backfill_request=6, stale_dataset_alert=6, tracking_gap_report=17
+  metrics_governance_issue (total=40): metric_definition_question=10, dashboard_discrepancy_report=15, source_of_truth_conflict=15
+  travel_operations_issue (total=40): trip_booking_change=3, unused_ticket_credit_question=3, trip_approval_delay=4, traveler_profile_sync_issue=6, travel_expense_followup=1, corporate_card_travel_issue=3, per_diem_exception_question=4, receipt_match_issue=1, visa_letter_request=5, emergency_travel_change=3, travel_policy_exception=4, traveler_profile_update=3
+  workplace_experience_issue (total=39): office_supply_restock=3, catering_setup_issue=1, signage_update_request=4, pantry_service_issue=3, all_hands_room_reset=2, onsite_event_support=2, av_setup_issue=4, event_schedule_change=3, visitor_hosting_request=10, visitor_list_sync_issue=7
+  payroll_operations_issue (total=39): missing_pay=5, timesheet_correction=3, overtime_calculation_issue=4, deduction_mismatch=2, w2_correction_request=3, tax_withholding_change=5, tax_document_delivery_issue=1, residency_tax_question=3, bonus_payment_followup=2, pay_stub_request=4, commission_payment_followup=2, retro_pay_adjustment_request=5
+  regional_operations_issue (total=38): regional_move_coordination=4, site_readiness_check=4, regional_seating_change=7, country_process_question=2, local_notice_update=4, regional_audit_evidence_request=1, policy_translation_update=1, mailroom_request=4, local_vendor_followup=5, courier_delivery_issue=3, reception_service_request=3
+
+department x system_name:
+  HR (total=95): Workday=41, Greenhouse=23, Benefits Portal=19, Learning Management System=12
+  Finance (total=51): NetSuite=12, SAP=8, Coupa=7, Expense Portal=8, Billing Portal=16
+  IT (total=96): Okta=17, Google Workspace=16, Microsoft 365=16, Jira=17, VPN=8, MDM Platform=14, Service Desk Portal=8
+  Security (total=39): Okta=6, SIEM=14, EDR Platform=4, Access Governance Tool=4, Security Awareness Platform=5, Vulnerability Management Platform=6
+  Facilities (total=44): Badge System=12, Room Booking Tool=11, Workplace Portal=11, Maintenance Ticketing System=10
+  Procurement (total=27): SAP=8, Coupa=15, Vendor Portal=3, Purchase Intake Portal=1
+  Legal (total=66): Contract Lifecycle Tool=24, Document Management System=18, E-signature Platform=13, Privacy Request Portal=11
+  Sales (total=86): Salesforce=25, Quote Builder=18, Sales Engagement Platform=15, Revenue Intelligence Platform=15, Territory Planning Tool=13
+  Marketing (total=81): Marketo=18, HubSpot=18, CMS Platform=16, Webinar Platform=14, Digital Asset Manager=15
+  Customer Support (total=84): Zendesk=25, Statuspage=22, Help Center=17, Support Messaging Platform=7, Customer CRM=13
+  Engineering (total=90): GitHub=8, Cloud Console=12, Build Platform=17, Feature Flag Service=17, Incident Management Platform=13, Secrets Manager=13, Artifact Registry=10
+  Data (total=84): Looker=10, Snowflake=8, dbt Cloud=13, Tracking Console=25, Workflow Orchestrator=6, Data Catalog=11, Experimentation Platform=11
+  Travel (total=40): Travel Portal=16, Concur=11, Corporate Card Portal=7, Visa Support Portal=6
+  Workplace Experience (total=39): Workplace Portal=5, Visitor Management System=10, Catering Portal=7, Event Calendar=6, AV Booking Tool=5, Parking Management System=6
+  Payroll (total=39): Workday=15, Payroll Portal=7, ADP=9, Timekeeping System=8
+  Regional Operations (total=39): Badge System=9, Workplace Portal=8, Local Operations Portal=11, Courier Tracking Portal=6, Regional Compliance Tracker=5
+
+urgency x severity:
+  low (total=171): minor=92, moderate=68, major=11
+  medium (total=439): minor=89, moderate=223, major=127
+  high (total=294): moderate=71, major=131, business_critical=92
+  critical (total=96): major=42, business_critical=54

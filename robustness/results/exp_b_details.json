@@ -1,0 +1,166 @@
+{
+  "source": "../../data/enterprise_ticket_run_evaluations/enterprise_ticket_robustness/evaluation_report_details/robustness_expectations.jsonl",
+  "n_pairs_valid": 5993,
+  "n_pairs_failed": 2,
+  "n_runs": 110,
+  "paper_label_groups": {
+    "same_pov": {
+      "n_pairs": 1418,
+      "mean": 0.22307121592037246,
+      "sd": 0.148450545835046,
+      "median": 0.20382331182777413
+    },
+    "diff_pov": {
+      "n_pairs": 4575,
+      "mean": 0.22439777860557797,
+      "sd": 0.13296918586743012,
+      "median": 0.21310413117718158
+    }
+  },
+  "majority_theme_groups": {
+    "same_pov": {
+      "n_pairs": 1492,
+      "mean": 0.22474206263927451,
+      "sd": 0.14811242229478422
+    },
+    "diff_pov": {
+      "n_pairs": 4501,
+      "mean": 0.22386573291219947,
+      "sd": 0.13282551110666616
+    },
+    "pair_label_agreement_with_paper": 0.9639579509427666
+  },
+  "theme_resolution_diagnostics": {
+    "n_runs": 110,
+    "runs_with_unstable_theme": 25,
+    "majority_share_mean": 0.9315262718932443,
+    "majority_share_min": 0.3669724770642202,
+    "resolution_mode_census": {
+      "best_reference_fallback": 60,
+      "semantic_judge": 50
+    },
+    "runs_per_majority_theme": {
+      "intent_group": 45,
+      "department": 25,
+      "issue_type": 19,
+      "intent_label_normal": 5,
+      "system_name": 5,
+      "intent_label_fine": 4,
+      "organizational_label_normal": 4,
+      "organizational_label_coarse": 1,
+      "ticket_category": 1,
+      "intent_label_coarse": 1
+    }
+  },
+  "permutation_test_majority_themes": {
+    "observed_mean_diff": 0.0008763297270750203,
+    "p_value": 0.9412058794120588,
+    "n_permutations": 10000,
+    "n_runs": 110,
+    "n_same_pairs": 1492,
+    "n_diff_pairs": 4501,
+    "n_missing_pairs": 2
+  },
+  "ari_crosscheck": {
+    "n_checked": 25,
+    "max_abs_diff": 5.551115123125783e-17,
+    "mean_abs_diff": 1.5057399771478685e-17
+  },
+  "sweep": [
+    {
+      "threshold": 0.05,
+      "invariance_success": 0.8765867418899859,
+      "responsiveness_success": 0.09158469945355191
+    },
+    {
+      "threshold": 0.1,
+      "invariance_success": 0.7461212976022567,
+      "responsiveness_success": 0.20174863387978142
+    },
+    {
+      "threshold": 0.15,
+      "invariance_success": 0.6361071932299013,
+      "responsiveness_success": 0.32612021857923496
+    },
+    {
+      "threshold": 0.2,
+      "invariance_success": 0.5070521861777151,
+      "responsiveness_success": 0.46469945355191256
+    },
+    {
+      "threshold": 0.25,
+      "invariance_success": 0.3935119887165021,
+      "responsiveness_success": 0.6034972677595628
+    },
+    {
+      "threshold": 0.3,
+      "invariance_success": 0.2912552891396333,
+      "responsiveness_success": 0.7234972677595628
+    },
+    {
+      "threshold": 0.35,
+      "invariance_success": 0.191114245416079,
+      "responsiveness_success": 0.8185792349726776
+    },
+    {
+      "threshold": 0.4,
+      "invariance_success": 0.12693935119887165,
+      "responsiveness_success": 0.8885245901639345
+    },
+    {
+      "threshold": 0.45,
+      "invariance_success": 0.08392101551480959,
+      "responsiveness_success": 0.9414207650273224
+    },
+    {
+      "threshold": 0.5,
+      "invariance_success": 0.05007052186177715,
+      "responsiveness_success": 0.973551912568306
+    },
+    {
+      "threshold": 0.55,
+      "invariance_success": 0.020451339915373765,
+      "responsiveness_success": 0.9897267759562841
+    },
+    {
+      "threshold": 0.6,
+      "invariance_success": 0.011988716502115656,
+      "responsiveness_success": 0.994535519125683
+    },
+    {
+      "threshold": 0.65,
+      "invariance_success": 0.009167842031029619,
+      "responsiveness_success": 0.9973770491803279
+    },
+    {
+      "threshold": 0.7,
+      "invariance_success": 0.006346967559943582,
+      "responsiveness_success": 0.9991256830601093
+    },
+    {
+      "threshold": 0.75,
+      "invariance_success": 0.0028208744710860366,
+      "responsiveness_success": 0.9995628415300546
+    },
+    {
+      "threshold": 0.8,
+      "invariance_success": 0.0021156558533145277,
+      "responsiveness_success": 0.9995628415300546
+    },
+    {
+      "threshold": 0.85,
+      "invariance_success": 0.0,
+      "responsiveness_success": 0.9995628415300546
+    },
+    {
+      "threshold": 0.9,
+      "invariance_success": 0.0,
+      "responsiveness_success": 0.9995628415300546
+    },
+    {
+      "threshold": 0.95,
+      "invariance_success": 0.0,
+      "responsiveness_success": 0.9995628415300546
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "description": "Zero-circularity robustness check: pairs of runs whose branch configs carry the IDENTICAL auto-discovered topic (same topic_id slug, label, and guidance), i.e. the same stated intent verbatim, independent of any theme resolution.",
+  "source_pairs": "data/enterprise_ticket_run_evaluations/enterprise_ticket_robustness/evaluation_report_details/robustness_expectations.jsonl",
+  "source_topics": "data/final_enterprise_ticket_run/enterprise_ticket_run/results.jsonl (config.metadata.topic_branch_topic_id)",
+  "same_stated_intent_pairs": {
+    "n": 9,
+    "ari_mean": 0.4991,
+    "ari_sd": 0.1553,
+    "values_by_topic": [
+      {"topic": "issue-type-failure-mode", "ari": 0.736},
+      {"topic": "requester-persona", "ari": 0.714},
+      {"topic": "issue-type-failure-mode", "ari": 0.550},
+      {"topic": "issue-type-failure-mode", "ari": 0.487},
+      {"topic": "system-or-platform-involved", "ari": 0.486},
+      {"topic": "issue-type-failure-mode", "ari": 0.463},
+      {"topic": "issue-type-failure-mode", "ari": 0.434},
+      {"topic": "issue-type-failure-mode", "ari": 0.385},
+      {"topic": "business-process-affected", "ari": 0.236}
+    ],
+    "invariance_success": {"gamma_0.3": 0.889, "gamma_0.4": 0.778, "gamma_0.5": 0.333}
+  },
+  "all_other_pairs": {"n": 5984, "ari_mean": 0.2237},
+  "permutation_test": {
+    "design": "run-level: original topic slugs shuffled across the 110 runs, pair groups recomputed, 10,000 permutations, two-sided",
+    "observed_mean_diff": 0.2754,
+    "p_value": 0.0001,
+    "note": "p is the add-one lower bound; no permutation reached the observed difference"
+  },
+  "companion_result_resolved_theme_level": {
+    "same_resolved_theme": {"n": 1418, "ari_mean": 0.2231, "ari_sd": 0.1484},
+    "different_resolved_theme": {"n": 4575, "ari_mean": 0.2244, "ari_sd": 0.1330},
+    "permutation_test_p": 0.9412
+  },
+  "run_census": {
+    "total_conversations": 146,
+    "saved_final_partition": 110,
+    "run_error_exception": 34,
+    "max_turns_without_save": 2,
+    "pairs_evaluated": 5995,
+    "pairs_valid": 5993,
+    "pairs_failed_in_evaluator": 2
+  }
+}
