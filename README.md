@@ -1,4 +1,7 @@
 # Conversational Clustering
+
+**Paper:** [Rethinking Clustering as a Conversational Supervision Problem](https://aclanthology.org/2026.emnlp-main.1924/) (EMNLP 2026)
+
 Implementation repo for conversational clustering.
 
 ## Setup 
